@@ -1,0 +1,81 @@
+body {
+    overflow:hidden;
+  }
+  
+  
+  #controls {
+  
+  }
+  #container {
+    
+  }
+  
+  .clearfix {
+    clear:both;
+  }
+  
+  h1 {
+    clear:both;
+    background-color: yellow;
+    border: 2px solid black;
+  }
+  
+  #intro {
+    background-color: lightyellow;
+    border: 2px solid black;
+  }
+  
+  #add_square, #add_circle, #launch, #relaunch  {
+    float:left;
+    border: 2px solid black;
+    background-color: darkblue;
+    padding:10px;
+    color:#fff;
+    width:100px;
+    margin-left:4px;
+    cursor:pointer;
+    z-index:100;
+  }
+  
+  #add_square.disabled, #add_circle.disabled, #launch.disabled {
+    background-color:grey;
+    border-color:darkgrey;
+    cursor:default;
+  }
+  
+  #launch  {
+    background-color:darkgreen;
+  }
+  
+  #relaunch  {
+    background-color:darkred;
+  }
+  
+  .circle {
+    position:absolute;
+    border-radius: 50%;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border:2px solid black !important;
+  }
+  
+  .square {
+    position:absolute;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border:2px solid black !important;
+  }
+  
+  .red {
+    background-color:red;
+  }
+  
+  .green {
+    background-color:green;
+  }
+  
+  .blue {
+    background-color:blue;
+  }

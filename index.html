@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Painting challenge</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <div id="controls">
+    <div id="add_square">
+      Add box
+    </div>
+
+    <div id="add_circle">
+      Add ball
+    </div>
+    
+    <div id="launch">
+      Start Painting!
+    </div>
+    
+    <div id="relaunch">
+      Reload
+    </div>
+    
+    <div class="clearfix"></div>
+  </div>
+  
+  <div id="container">
+    
+
+    <h1>Let's have some painting fun</h1>
+
+    <div id="intro">
+      Press the buttons above to paint a fun geometrical masterpiece!
+    </div>
+  </div>
+  
+  
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="main.js"></script>
+  <script> 
+    
+    function randomColor() {
+      return 'rgb('+(Math.floor(Math.random()*256))+','+(Math.floor(Math.random()*256))+','+(Math.floor(Math.random()*256))+')';
+    }    
+    
+    function addSquare() {
+      var container = document.getElementById("container");
+      var square = document.createElement("div");
+      square.classList.add("square");
+      square.style.backgroundColor = randomColor();
+      container.appendChild(square);
+    }
+    
+    function addCircle(){
+      var container = document.getElementById("container");
+      var circle = document.createElement("div");
+      circle.classList.add("circle");
+      circle.style.backgroundColor = randomColor();
+      container.appendChild(circle);
+    }
+
+  </script>
+</body>
+</html>
