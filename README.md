@@ -1,4 +1,4 @@
-
+A fun and simple reactive web page with a minimalist design that allows users to paint geometrical shapes (squares and circles) with random colors using buttons.
 
 Redesign:
 
